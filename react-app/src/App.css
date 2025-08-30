@@ -1,0 +1,172 @@
+.superhero-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(30, 30, 40, 0.92);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+}
+
+.superhero-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.superhero-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.superhero-form input {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #23243a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.superhero-form button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#1e3c72,#2a5298);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+}
+.superhero-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.superhero-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: rgba(40,40,60,0.98);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.superhero-table th, .superhero-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  color: #fff;
+}
+.superhero-table th {
+  background: linear-gradient(90deg,#1e3c72,#2a5298);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.superhero-table tr {
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.superhero-table tr:last-child {
+  border-bottom: none;
+}
+.superhero-table button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2a5298;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.2s;
+}
+.superhero-table button:last-child {
+  background: #e74c3c;
+}
+.superhero-table button:hover {
+  background: #1e3c72;
+}
+.superhero-table button:last-child:hover {
+  background: #c0392b;
+}
+
+.superhero-error {
+  color: #e74c3c;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.superhero-loading {
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.animated-bg {
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #1e3c72, #2a5298, #1e3c72, #232526, #414345);
+  background-size: 1200% 1200%;
+  animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%}
+  50% {background-position:100% 50%}
+  100% {background-position:0% 50%}
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
