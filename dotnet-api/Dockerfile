@@ -16,7 +16,7 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose port inside Docker Network (Not to host)
-EXPOSE 80
+EXPOSE 8080
 
 # Start API
 ENTRYPOINT ["dotnet", "SuperHeros.dll"]

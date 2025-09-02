@@ -33,7 +33,7 @@ services:
       context: ./react-app
       dockerfile: Dockerfile
       args:
-      - VITE_API_BASE_URL=http://43.205.194.167
+        - VITE_API_BASE_URL=http://13.233.195.103
     container_name: frontend
     depends_on:
       - webapi

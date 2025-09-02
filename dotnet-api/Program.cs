@@ -43,11 +43,7 @@ app.UseAuthorization();
 app.UseCors("AllowAll");
 
 app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SuperHero API V1");
-    c.RoutePrefix = "swagger"; // Swagger UI will be at /swagger
-});
+app.UseSwaggerUI();
 
 app.MapControllers();
 
